@@ -1,0 +1,15 @@
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+p {
+  text-align: center;
+}
