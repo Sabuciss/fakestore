@@ -1,0 +1,14 @@
+.star {
+  display: inline-block;
+  font-size: 1.2rem;
+  line-height: 1;
+  margin-right: 2px;
+}
+
+.star.filled {
+  color: #a855f7;
+}
+
+.star.empty {
+  color: #ddd6fe;
+}

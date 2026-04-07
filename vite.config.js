@@ -4,4 +4,23 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  server: {
+    proxy: {
+      '/api/external': {
+        target: 'https://fakestoreapi.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/external/, ''),
+      },
+      '/api/mirror': {
+        target: 'https://fakestoreapiserver.reactbd.org/api',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/mirror/, ''),
+      },
+      '/api/categories': {
+        target: 'https://fakestoreapiserver.reactbd.org/api',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/categories/, '/categories'),
+      },
+    },
+  },
 })

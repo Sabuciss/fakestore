@@ -1,0 +1,165 @@
+.product-detail {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #7c3aed;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 32px;
+  transition: color 180ms ease;
+}
+
+.back-button:hover {
+  color: #5b21b6;
+}
+
+.detail-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.detail-image {
+  position: relative;
+  background: #faf5ff;
+  border-radius: 12px;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+}
+
+.detail-image img {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #ff6b6b;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.detail-info {
+  padding: 32px 0;
+}
+
+.detail-category {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #f0ecff;
+  color: #5b3db8;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.detail-title {
+  font-size: 2.5rem;
+  margin: 16px 0;
+  color: #3b0764;
+  line-height: 1.2;
+}
+
+.detail-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  padding: 24px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.detail-meta div {
+  display: grid;
+  gap: 8px;
+}
+
+.meta-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #999;
+  letter-spacing: 0.08em;
+}
+
+.meta-value {
+  font-size: 1.1rem;
+  color: #222;
+  font-weight: 500;
+}
+
+.meta-value.in-stock {
+  color: #4caf50;
+}
+
+.meta-value.out-of-stock {
+  color: #f44336;
+}
+
+.detail-rating {
+  padding: 24px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.detail-price {
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+  padding: 24px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.current-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #7c3aed;
+}
+
+.original-price {
+  font-size: 1.2rem;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.detail-description {
+  color: #555;
+  line-height: 1.8;
+  margin: 24px 0;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 960px) {
+  .detail-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .detail-image {
+    min-height: 300px;
+  }
+
+  .detail-title {
+    font-size: 2rem;
+  }
+
+  .detail-meta {
+    grid-template-columns: 1fr;
+  }
+}

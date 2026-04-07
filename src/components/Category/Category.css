@@ -1,0 +1,21 @@
+.category-tag {
+  padding: 8px 16px;
+  border: 1px solid #c4b5fd;
+  border-radius: 999px;
+  background: #faf5ff;
+  color: #5b21b6;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 180ms ease;
+}
+
+.category-tag:hover {
+  border-color: #7c3aed;
+  background: #ede9fe;
+}
+
+.category-tag.active {
+  background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+  color: white;
+  border-color: #7c3aed;
+}

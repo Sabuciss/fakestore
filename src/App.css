@@ -1,15 +1,52 @@
+.app-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.app-shell h1 {
+  margin-bottom: 8px;
+  text-align: center;
+  color: #3b0764;
+}
+
+.source-text {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #7c3aed;
+}
+
 .product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.loading-text {
+  text-align: center;
+  color: #555;
+}
+
+.results-info {
+  margin: 12px 0;
+  color: #7c3aed;
+  font-size: 0.9rem;
+}
+
+.category-filters {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
+  gap: 8px;
+  margin: 16px 0;
 }
 
-h1 {
+.error-text {
   text-align: center;
-  margin: 20px 0;
+  color: #b42318;
 }
 
-p {
-  text-align: center;
+@media (max-width: 600px) {
+  .app-shell {
+    padding: 24px;
+  }
 }
